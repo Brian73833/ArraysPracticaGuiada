@@ -2,9 +2,9 @@ public class Person {
 
     private String name;
     private int age;
-    private Pet[] pets;
+    private PetManager petManager;
 
-    public Person(String name, int age, int numbersOfPets) {
+    public Person(String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -25,12 +25,8 @@ public class Person {
         this.age = age;
     }
 
-    public Pet[] getPets() {
-        return pets;
-    }
-
-    public void setPets(Pet[] pets) {
-        this.pets = pets;
+    public boolean addPet(Pet pet) {
+        return petManager.addPet(pet);
     }
 
 }

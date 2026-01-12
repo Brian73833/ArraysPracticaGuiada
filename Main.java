@@ -9,6 +9,14 @@ public class Main {
          * 
          * System.out.println(numbers[2]);
          * System.out.println(fruits[2]);
+         * 
+         * Person person = new Person("Brian", 19, 2);
+         * 
+         * System.out.println(person.getPets());
+         * 
+         * for (Pet pet : person.getPets()) {
+         * System.out.println(pet.getPetName());
+         * }
          */
 
     }

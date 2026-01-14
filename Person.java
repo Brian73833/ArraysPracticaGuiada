@@ -26,11 +26,19 @@ public class Person {
         this.age = age;
     }
 
+    public PetManager getPetManager() {
+        return petManager;
+    }
+
+    public void setPetManager(PetManager petManager) {
+        this.petManager = petManager;
+    }
+
     public boolean addPet(Pet pet) {
         return petManager.addPet(pet);
     }
 
-    public boolean removePet(Pet pet){
+    public boolean removePet(Pet pet) {
         return petManager.removePet(pet);
     }
 

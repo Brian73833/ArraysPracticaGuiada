@@ -42,4 +42,18 @@ public class PetManager {
         }
         return petlist;
     }
+
+    public boolean updatePets(Pet pet, int index) {
+
+        if (index < 0 || index >= petCount) {
+            return false;
+        }
+        if (pet == null) {
+            return false;
+        }
+
+        pets[index] = pet;
+        return true;
+
+    }
 }

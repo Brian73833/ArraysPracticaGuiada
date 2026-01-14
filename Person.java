@@ -1,3 +1,5 @@
+
+
 public class Person {
 
     private String name;
@@ -36,6 +38,10 @@ public class Person {
 
     public Pet[] getPets() {
         return petManager.getPets();
+    }
+
+    public boolean updatePets(Pet pet, int index) {
+        return petManager.updatePets(pet, index);
     }
 
 }

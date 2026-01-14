@@ -24,7 +24,7 @@ public class Main {
         Person person = new Person("Brian", 19, petManager);
         Pet pet1 = new Pet("Goldie", "Fish");
         Pet pet2 = new Pet("Toby", "Dog");
-        Pet pet3 = new Pet("Boby", "Dog");
+        Pet pet3 = new Pet("Max", "Cat");
 
         if (person.addPet(pet1)) {
             IOManager.printMessage("Pet added successfully");

@@ -4,9 +4,10 @@ public class Person {
     private int age;
     private PetManager petManager;
 
-    public Person(String name, int age) {
+    public Person(String name, int age, PetManager petManager) {
         this.name = name;
         this.age = age;
+        this.petManager = petManager;
     }
 
     public String getName() {
@@ -27,6 +28,10 @@ public class Person {
 
     public boolean addPet(Pet pet) {
         return petManager.addPet(pet);
+    }
+
+    public boolean removePet(Pet pet){
+        return petManager.removePet(pet);
     }
 
 }

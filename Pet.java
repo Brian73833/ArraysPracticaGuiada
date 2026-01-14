@@ -6,7 +6,7 @@ public class Pet {
     public Pet(String petName, String type) {
         this.petName = petName;
         this.type = type;
-        
+
     }
 
     public String getPetName() {

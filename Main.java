@@ -1,3 +1,4 @@
+
 public class Main {
 
     public static void main(String[] args) {
@@ -24,15 +25,23 @@ public class Main {
         Pet pet1 = new Pet("Goldie", "Fish");
 
         if (person.addPet(pet1)) {
-            System.out.println("Pet added successfully");
+            IOManager.printMessage("Pet added successfully");
         } else {
-            System.out.println("Failed to add pet");
+            IOManager.printMessage("Failed to add pet");
         }
 
         if (person.removePet(pet1)) {
-            System.out.println("Pet removed successfully");
+            IOManager.printMessage("Pet removed successfully");
         } else {
-            System.out.println("Failed to remove pet");
+            IOManager.printMessage("Failed to remove pet");
+        }
+
+        if (person.getPets().length == 0) {
+            IOManager.printMessage("No pets found");
+        } else {
+            for (Pet pet : person.getPets()) {
+                IOManager.printMessage(pet.getPetName());
+            }
         }
 
     }

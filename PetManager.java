@@ -21,9 +21,9 @@ public class PetManager {
 
     public boolean removePet(Pet pet) {
         for (int i = 0; i < pets.length; i++) {
-            if (pets[i] == null && pets[i].equals(pet)) {
+            if (pets[i] != null && pets[i].equals(pet)) {
                 for (int j = 0; j < pets.length - 1; j++) {
-                    pets[j] = pets[j - 1];
+                    pets[j] = pets[j + 1];
 
                 }
                 pets[pets.length - 1] = null;
